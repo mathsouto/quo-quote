@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 0 30px;
+}
+.text {
+    font-size: 1rem;
+}
+.randomButton {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    margin-left: 15px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.buttonText {
+    margin-left: 8px;
+    color: var(--dark-gray);
+}
+@media (hover:hover) and (pointer: fine) {
+    .randomButton:hover {
+        background-color: var(--light-gray);
+    }
+    .randomButton:hover .buttonText,
+    .randomButton:hover .icon path {
+        color: white;
+        fill: white;
+    }
+}
+@media (orientation: portrait) {
+    .text {
+        display: none;
+    }
+}

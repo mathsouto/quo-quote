@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 0 30px;
+    cursor: pointer;
+}
+.icon {
+    transition: scale 0.1s ease-in-out;
+}
+@media (hover:hover) and (pointer: fine) {
+    .container:hover .icon {
+        scale: 1.1;
+    }
+}
+.text {
+    padding-left: 8px;
+}
+@media (orientation:portrait) {
+    .container {
+        display: none;
+    }
+}
