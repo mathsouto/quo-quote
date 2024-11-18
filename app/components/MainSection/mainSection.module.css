@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slogan {
+    font-size: clamp(14px, 1.25vw, 20px);
+    font-weight: normal;
+    margin: 5vmin;
+}
+.quoteSign {
+    position: fixed;
+    width: clamp(20px, 15vmin, 70px);
+    height: auto;
+}
+.quoteSign.top {
+    left: 0;
+    margin: 5%;
+}
+.quoteSign.bottom {
+    rotate: 180deg;
+    right: 0;
+    bottom: 0;
+    margin: 5%;
+}
+.quoteContainer {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 800px;
+    border-top: 1px solid var(--lighter-gray);
+    border-bottom: 1px solid var(--lighter-gray);
+    padding: 2.5vmin 4.5vmin;
+    margin-bottom: 20px;
+}
+.quote {
+    margin-bottom: 1vmin;
+    text-align: justify;
+}
+.author {
+    margin-bottom: 2vmin;
+}
+.tagContainer {
+    display: flex;
+    align-items: center;
+}
+.tags {
+    margin-left: 5px;
+}
+@media (max-width: 1080px) {
+    .quoteSign {
+        display: none;
+    }
+}
